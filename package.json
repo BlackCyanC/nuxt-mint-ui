@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-mint-ui",
+  "version": "1.0.0",
+  "description": "Nuxt.js And Mint-ui",
+  "author": "BlackCyanC",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.4.11",
+    "mint-ui": "^2.2.13",
+    "nuxt": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
