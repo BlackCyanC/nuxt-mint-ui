@@ -1,14 +1,27 @@
 <template>
-  <div>
-    <nuxt />
-  </div>
+	<div id="default-container">
+		<Head />
+		<nuxt />
+		<Tabbar />	
+	</div>
 </template>
 <script>
-import store from '~/store';
+import Head from "~/components/Head.vue";
+import Tabbar from "~/components/Tabbar.vue";
+import store from "~/store";
 export default {
-  store
-}
+	components: {
+		Head,
+		Tabbar
+	},
+	store
+};
 </script>
-<style>
-
+<style lang="less" scoped>
+#default-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
+}
 </style>

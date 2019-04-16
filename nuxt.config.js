@@ -19,12 +19,14 @@ module.exports = {
   // 全局样式
   css: [
     'mint-ui/lib/style.css',
-    '~/assets/less/normalize.less'
+    '~/assets/less/normalize.less',
+    '~/assets/less/base.less'
   ],
   // 插件
   plugins: [
     '@/plugins/mint-ui',
-    '@/plugins/axios'
+    '@/plugins/axios',
+    '@/plugins/font-awesome'
   ],
   modules: [
     '@nuxtjs/axios',
