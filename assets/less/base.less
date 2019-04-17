@@ -1,3 +1,5 @@
+@import './normalize.less';
+
 html {
   height: 100%;
   font-size: 26.667vw;
@@ -7,6 +9,20 @@ html {
 
     #__nuxt {
       height: 100%;
+
+      // loading 进度条样式
+      .nuxt-progress {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 5px;
+        width: 0%;
+        opacity: 1;
+        transition: width 0.1s, opacity 0.4s;
+        background-color: red;
+        z-index: 999999;
+      }
 
       #__layout {
         height: 100%;
