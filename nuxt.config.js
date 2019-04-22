@@ -21,7 +21,7 @@ module.exports = {
   // 全局样式
   css: [
     'mint-ui/lib/style.css',
-    '~/assets/less/base.less'
+    '~/assets/less/base.scss'
   ],
   // 插件
   plugins: [
@@ -43,7 +43,7 @@ module.exports = {
   // axios代理
   proxy: {
     '/api/': {
-      target: 'http://school.test.51jiaoxi.com/', // 代理地址
+      target: '', // 代理地址
       changeOrigin: true,
       pathRewrite: {
         '^/api': ''

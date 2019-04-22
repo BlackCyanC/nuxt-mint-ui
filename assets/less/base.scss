@@ -1,4 +1,4 @@
-@import './normalize.less';
+@import './normalize.scss';
 
 html {
   height: 100%;
@@ -20,7 +20,7 @@ html {
         width: 0%;
         opacity: 1;
         transition: width 0.1s, opacity 0.4s;
-        background-color: red;
+        background-color: cyan;
         z-index: 999999;
       }
 

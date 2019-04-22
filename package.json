@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-mint-ui",
+  "name": "nuxt-mobile",
   "version": "1.0.0",
-  "description": "Nuxt.js And Mint-ui",
+  "description": "Nuxt.js With Mobile",
   "author": "BlackCyanC",
   "private": true,
   "scripts": {
@@ -23,8 +23,8 @@
     "regenerator-runtime": "^0.13.2"
   },
   "devDependencies": {
-    "less": "^3.9.0",
-    "less-loader": "^4.1.0",
-    "nodemon": "^1.18.9"
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^7.1.0"
   }
 }

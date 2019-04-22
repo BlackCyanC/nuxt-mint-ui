@@ -9,10 +9,10 @@ export default {
 		Logo
 	},
 	asyncData({ app }) {
-		let login = app.$reqConfig.login;
+		let login = app.$reqConfigs.login;
 		let data = { userId: 1, password: 123e13123 };
 		return {
-			indexHead: app.$headConfig.index()
+			indexHead: app.$heads.index()
 		};
 	},
 	fetch({ app }) {},
@@ -21,7 +21,7 @@ export default {
 		return this.indexHead;
 	},
 	mounted() {
-		console.log(this.$reqConfig.login({ userId: 1, password: 123e13123 }));
+		console.log(this.$reqConfigs.login({ userId: 1, password: 123e13123 }));
 	}
 };
 </script>

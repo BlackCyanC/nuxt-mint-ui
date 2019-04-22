@@ -26,5 +26,5 @@ class RequestConfigs {
 }
 
 export default ({ app }) => {
-  Vue.prototype.$reqConfig = app.$reqConfig = new RequestConfigs()
+  Vue.prototype.$reqConfigs = app.$reqConfigs = new RequestConfigs()
 }

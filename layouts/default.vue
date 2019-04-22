@@ -17,7 +17,7 @@ export default {
 	store
 };
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 #default-container {
   position: relative;
   width: 100%;

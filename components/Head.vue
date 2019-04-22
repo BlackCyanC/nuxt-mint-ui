@@ -14,7 +14,7 @@ export default {
 };
 </script>
 
-<style scoped lang="less">
+<style scoped lang="scss">
 #header-container {
 	margin-top: -40px;
 }
