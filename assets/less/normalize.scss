@@ -1,4 +1,4 @@
-@import './global-variate.less';
+@import './global-variate.scss';
 
 * {
   box-sizing: border-box;
@@ -30,7 +30,7 @@ input,
 textarea,
 th,
 td {
-  .clear-pm;
+  @include clear-pm;
 }
 
 body,
@@ -38,7 +38,8 @@ button,
 input,
 select,
 textarea {
-  font: normal 400 @font-base-size/100% "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  font: normal 400 $font-base-size "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  line-height: $font-base-line-height;
 }
 
 h1,
@@ -47,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-  .base-font;
+  @include base-font;
 }
 
 address,
@@ -66,7 +67,7 @@ samp {
 }
 
 small {
-  .base-font;
+  @include base-font;
 }
 
 ul,
@@ -75,13 +76,13 @@ ol {
 }
 
 a {
-  color: @color-info;
+  color: $color-info;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: @color-brand;
+  color: $color-brand;
   text-decoration: underline;
 }
 
@@ -94,7 +95,7 @@ sub {
 }
 
 legend {
-  color: @color-black;
+  color: $color-black;
 }
 
 fieldset,
@@ -106,7 +107,7 @@ button,
 input,
 select,
 textarea {
-  .base-font;
+  @include base-font;
 }
 
 table {
@@ -115,7 +116,7 @@ table {
 }
 
 html {
-  line-height: @font-base-line-height;
+  line-height: $font-base-line-height;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -131,7 +132,7 @@ hr {
 
 pre {
   font-family: monospace, monospace;
-  .base-font;
+  @include base-font;
 }
 
 abbr[title] {
@@ -149,27 +150,27 @@ code,
 kbd,
 samp {
   font-family: monospace, monospace;
-  .base-font;
+  @include base-font;
 }
 
 small {
-  font-size: @font-base-size * 0.8;
+  font-size: $font-base-size * 0.8;
 }
 
 sub,
 sup {
-  font-size: @font-base-size * 0.75;
+  font-size: $font-base-size * 0.75;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
 sub {
-  bottom: -@font-base-size * 0.25;
+  bottom: -$font-base-size * 0.25;
 }
 
 sup {
-  top: -@font-base-size * 0.5;
+  top: -$font-base-size * 0.5;
 }
 
 img {
@@ -183,8 +184,8 @@ input,
 optgroup,
 select,
 textarea {
-  .base-font;
-  .clear-pm;
+  @include base-font;
+  @include clear-pm;
   font-family: inherit;
 }
 
@@ -275,11 +276,11 @@ summary {
 }
 
 template {
-  .none;
+  @include none;
 }
 
 [hidden] {
-  .none;
+  @include none;
 }
 
 .clearfix:after {

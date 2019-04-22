@@ -1,6 +1,5 @@
-## Nuxt.js server rendering based on mint-ui
+## Nuxt.js server rendering With Mobile
 
+### npm i
 
-### npm/cnpm i
-
-### npm run dev
+### nuxt

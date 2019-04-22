@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style scoped lang="less">
+<style scoped lang="scss">
 #tabbar-container {
 	min-height: 55px;
 	overflow: hidden;
