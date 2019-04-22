@@ -1,4 +1,4 @@
-## Nuxt.js server rendering With Mobile
+## Nuxt.js server rendering with Mobile
 
 ### npm i
 
