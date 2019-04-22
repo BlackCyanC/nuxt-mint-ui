@@ -1,4 +1,4 @@
-import Vue from 'vue';
+import Vue from 'vue'
 /**
  * num : Number
  * str: String
@@ -7,20 +7,18 @@ import Vue from 'vue';
  * obj: Object
  */
 class RequestConfigs {
-  constructor() {
-
-  }
-  /** 
+  constructor() {}
+  /**
    * 登录接口
    * @method login
    * @param { userId : num, password : num }  用户名, 用户密码
    * @returns {}
-  */
+   */
   login({ userId, password }) {
     return {
       url: 'login',
       methods: 'post',
-      data: { userId, password }
+      data: { userId, password },
     }
   }
 }

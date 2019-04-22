@@ -1,20 +1,20 @@
 <template>
-	<div id="details-container">
+  <div id="details-container">
     details
-		<nuxt-child />
+    <nuxt-child/>
   </div>
 </template>
 
 <script>
-export default {
-	name: "",
-	data() {
-		return {};
-	}
-};
+  export default {
+    name: '',
+    data() {
+      return {}
+    },
+  }
 </script>
 
 <style scoped lang="scss">
-#details-container {
-}
+  #details-container {
+  }
 </style>
