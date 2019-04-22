@@ -21,7 +21,7 @@ module.exports = {
   // 全局样式
   css: [
     'mint-ui/lib/style.css',
-    '~/assets/less/base.scss'
+    '~/assets/scss/base.scss'
   ],
   // 插件
   plugins: [
