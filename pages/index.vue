@@ -11,12 +11,14 @@ export default {
 	asyncData({ app }) {
 		let login = app.$reqConfig.login;
 		let data = { userId: 1, password: 123e13123 };
-		// app.$axios(login(data));
+		return {
+			indexHead: app.$headConfig.index()
+		};
 	},
-	fetch({ app }) {
-		// return app.$axios.get('schools').then(res => {
-		//   console.log(res);
-		// })
+	fetch({ app }) {},
+	// head 函数形式访问 this.data
+	head() {
+		return this.indexHead;
 	},
 	mounted() {
 		console.log(this.$reqConfig.login({ userId: 1, password: 123e13123 }));

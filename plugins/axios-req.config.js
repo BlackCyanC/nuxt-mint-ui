@@ -1,3 +1,4 @@
+import Vue from 'vue';
 /**
  * num : Number
  * str: String
@@ -5,8 +6,7 @@
  * arr: Array
  * obj: Object
  */
-import Vue from 'vue';
-class RequestConfig {
+class RequestConfigs {
   constructor() {
 
   }
@@ -25,9 +25,6 @@ class RequestConfig {
   }
 }
 
-let reqConfig = new RequestConfig()
-
-
 export default ({ app }) => {
-  Vue.prototype.$reqConfig = app.$reqConfig = reqConfig
+  Vue.prototype.$reqConfig = app.$reqConfig = new RequestConfigs()
 }
