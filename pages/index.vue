@@ -1,5 +1,8 @@
 <template>
-  <div class="container">index</div>
+  <div class="container">
+    <van-checkbox v-model="checked">复选框</van-checkbox>
+    index
+  </div>
 </template>
 
 <script>
@@ -21,6 +24,11 @@
     // head 函数形式访问 this.data
     head() {
       return this.indexHead
+    },
+    data() {
+      return {
+        checked: true
+      };
     },
     mounted() {
       console.log(this.$reqConfigs.login({ userId: 1, password: 123e13123 }))
