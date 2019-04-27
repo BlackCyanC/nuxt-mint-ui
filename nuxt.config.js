@@ -23,17 +23,14 @@ module.exports = {
     },
     // 全局样式
     css: [
-        'mint-ui/lib/style.css',
         '~/assets/scss/base.scss'
     ],
     // 插件
     plugins: [
-        { src: '@/plugins/mint-ui' },
         { src: '@/plugins/vant-ui' },
         { src: '@/plugins/axios' },
         { src: '@/plugins/axios-req.config' },
         { src: '@/plugins/head.config.js' },
-        { src: '@/plugins/font-awesome' },
     ],
     modules: [
         '@nuxtjs/axios',
@@ -41,7 +38,7 @@ module.exports = {
     // nuxt.axios
     axios: {
         proxy: true,
-        prefix: process.env.NODE_ENV == 'development' ? '/api2' : '', // baseURL
+        prefix: process.env.NODE_ENV == 'development' ? '/api' : '', // baseURL
         credentials: true,
     },
     // axios代理
@@ -58,7 +55,7 @@ module.exports = {
         transpile: [/^mint-ui/],
         postcss: [
             require('postcss-pxtorem')({
-                remUnit: 37.5,
+                rootValue: 37.5,
                 propList: ['*']
             })
         ],
