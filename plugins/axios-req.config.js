@@ -17,7 +17,7 @@ class RequestConfigs {
   login({ userId, password }) {
     return {
       url: 'login',
-      methods: 'post',
+      method: 'post',
       data: { userId, password },
     }
   }

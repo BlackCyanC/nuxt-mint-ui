@@ -2,11 +2,15 @@
 
 html {
   height: 100%;
-  font-size: 26.667vw;
 
   body {
     height: 100%;
-
+    // toast提示文字居中
+    .van-toast {
+      .van-toast__text {
+        text-align: center;
+      }
+    }
     #__nuxt {
       height: 100%;
 
@@ -16,11 +20,11 @@ html {
         top: 0px;
         left: 0px;
         right: 0px;
-        height: 5px;
+        height: 2px;
         width: 0%;
         opacity: 1;
         transition: width 0.1s, opacity 0.4s;
-        background-color: cyan;
+        background-color: $color-brand;
         z-index: 999999;
       }
 
